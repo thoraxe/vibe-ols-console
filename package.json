@@ -74,7 +74,8 @@
     "displayName": "OpenShift Console Plugin Template",
     "description": "Template project for OpenShift Console plugins. Edit package.json to change this message and the plugin name.",
     "exposedModules": {
-      "VibeOLS": "./components/VibeOLS"
+      "VibeOLS": "./components/VibeOLS",
+      "InvestigationDetails": "./components/InvestigationDetails"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
@@ -86,5 +87,10 @@
     "babel-loader": "^8.0.2",
     "i18next": "^23.11.5",
     "mocha": "^10.5.1"
+  },
+  "dependencies": {
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^15.6.1"
   }
 }

@@ -23,6 +23,12 @@
   color: var(--pf-global--Color--100);
   margin-bottom: var(--pf-global--spacer--xs);
   line-height: 1.4;
+  cursor: pointer;
+}
+
+.vibe-ols__question:hover {
+  color: var(--pf-global--link--Color);
+  text-decoration: underline;
 }
 
 /* Investigation ID styling */
@@ -38,6 +44,19 @@
   color: var(--pf-global--Color--200);
   max-width: 200px;
   word-break: break-word;
+}
+
+/* Investigation details page layout */
+.vibe-ols__investigation-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pf-global--spacer--lg);
+}
+
+/* Clickable table rows */
+.pf-c-table tbody tr[data-clickable="true"]:hover {
+  background-color: var(--pf-global--BackgroundColor--light-300);
+  cursor: pointer;
 }
 
 /* Responsive table adjustments */

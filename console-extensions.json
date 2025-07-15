@@ -8,6 +8,14 @@
     }
   },
   {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/vibe-ols-console/investigation/:id",
+      "component": { "$codeRef": "InvestigationDetails" }
+    }
+  },
+  {
     "type": "console.navigation/href",
     "properties": {
       "id": "vibe-ols-console",

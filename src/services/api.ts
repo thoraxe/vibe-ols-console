@@ -5,8 +5,8 @@ import {
   ListInvestigationsParams,
 } from '../types/api';
 
-// Base API URL - this should be configurable in a real environment
-const API_BASE_URL = process.env.REACT_APP_VIBE_OLS_API_URL || 'http://localhost:8000';
+// Base API URL - hardcoded for now since process.env isn't available in console plugins
+const API_BASE_URL = 'http://localhost:8000';
 
 class APIError extends Error {
   constructor(message: string, public status: number) {

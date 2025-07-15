@@ -1,0 +1,89 @@
+/* Vibe OLS Console Plugin Styles */
+
+/* Loading state styles */
+.vibe-ols__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pf-global--spacer--md);
+  padding: var(--pf-global--spacer--xl);
+  color: var(--pf-global--Color--200);
+}
+
+/* Investigation count in toolbar */
+.vibe-ols__investigation-count {
+  color: var(--pf-global--Color--200);
+  font-size: var(--pf-global--FontSize--sm);
+  font-weight: var(--pf-global--FontWeight--normal);
+}
+
+/* Investigation question styling */
+.vibe-ols__question {
+  font-weight: var(--pf-global--FontWeight--bold);
+  color: var(--pf-global--Color--100);
+  margin-bottom: var(--pf-global--spacer--xs);
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.vibe-ols__question:hover {
+  color: var(--pf-global--link--Color);
+  text-decoration: underline;
+}
+
+/* Investigation ID styling */
+.vibe-ols__question-id {
+  font-size: var(--pf-global--FontSize--xs);
+  color: var(--pf-global--Color--200);
+  font-family: var(--pf-global--FontFamily--monospace);
+}
+
+/* Parameters cell styling */
+.vibe-ols__parameters {
+  font-size: var(--pf-global--FontSize--sm);
+  color: var(--pf-global--Color--200);
+  max-width: 200px;
+  word-break: break-word;
+}
+
+/* Investigation details page layout */
+.vibe-ols__investigation-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pf-global--spacer--lg);
+}
+
+/* Clickable table rows */
+.pf-c-table tbody tr[data-clickable="true"]:hover {
+  background-color: var(--pf-global--BackgroundColor--light-300);
+  cursor: pointer;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 768px) {
+  .vibe-ols__question {
+    font-size: var(--pf-global--FontSize--sm);
+  }
+  
+  .vibe-ols__parameters {
+    max-width: 150px;
+    font-size: var(--pf-global--FontSize--xs);
+  }
+}
+
+/* Empty state adjustments */
+.pf-c-empty-state__icon {
+  color: var(--pf-global--palette--blue-300);
+  font-size: 3rem;
+  margin-bottom: var(--pf-global--spacer--md);
+}
+
+/* Toolbar spacing */
+.pf-c-toolbar__content {
+  align-items: center;
+}
+
+/* Error state improvements */
+.pf-c-alert.pf-m-danger {
+  margin-top: var(--pf-global--spacer--md);
+}

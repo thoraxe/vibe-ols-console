@@ -1,12 +1,12 @@
 {
-  "name": "console-plugin-template",
+  "name": "vibe-ols-console",
   "version": "0.0.1",
-  "description": "Template project for OpenShift Console plugins",
+  "description": "Console plugin for the Vibe OLS application",
   "private": true,
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/console-plugin-template.git"
+    "url": "https://github.com/thoraxe/vibe-ols-console"
   },
   "scripts": {
     "clean": "rm -rf dist",
@@ -74,7 +74,8 @@
     "displayName": "OpenShift Console Plugin Template",
     "description": "Template project for OpenShift Console plugins. Edit package.json to change this message and the plugin name.",
     "exposedModules": {
-      "ExamplePage": "./components/ExamplePage"
+      "VibeOLS": "./components/VibeOLS",
+      "InvestigationDetails": "./components/InvestigationDetails"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
@@ -86,5 +87,10 @@
     "babel-loader": "^8.0.2",
     "i18next": "^23.11.5",
     "mocha": "^10.5.1"
+  },
+  "dependencies": {
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^15.6.1"
   }
 }

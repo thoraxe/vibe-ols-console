@@ -3,16 +3,24 @@
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example",
-      "component": { "$codeRef": "ExamplePage" }
+      "path": "/vibe-ols-console",
+      "component": { "$codeRef": "VibeOLS" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/vibe-ols-console/investigation/:id",
+      "component": { "$codeRef": "InvestigationDetails" }
     }
   },
   {
     "type": "console.navigation/href",
     "properties": {
-      "id": "example",
-      "name": "%plugin__console-plugin-template~Plugin Example%",
-      "href": "/example",
+      "id": "vibe-ols-console",
+      "name": "%plugin__console-plugin-template~Vibe OLS%",
+      "href": "/vibe-ols-console",
       "perspective": "admin",
       "section": "home"
     }
